@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<!--<div id="box">
+<ul >
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+</div>-->
+<!--<script>
+   /* 兼容处理*/
+    var box=document.getElementById("box")
+    if (typeof box.innerText === "string") {
+        console.log(box.innerText);
+    } else {
+        console.log(box.textContent);
+    }-->
+
+
+
+
+<!--</script>//获取任意对象的内部文本 （兼容所有浏览器）
+function getInnerText(element){
+    if(typeof element.innertext==="string"){
+        return element.innerText;
+    }else {
+        return element.textContent;
+    }
+}
+//设置任意对象的内部文本 （兼容所有浏览器）
+function setInnerText(element,content){
+    if (typeof element.innerText==="string" ){
+        element.innerText=content;
+    }else {
+        element.textContent = conetnt;
+    }
+}-->
+<!--点击按钮禁用文本框-->
+
+</body>
+</html>

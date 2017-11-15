@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 100px auto 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+            width: 300px;
+        }
+
+        th,
+        td {
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+
+        td {
+            font: 14px "微软雅黑";
+        }
+
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    </style>-->
+
+
+
+   <!-- table 栏切换-->
+   <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .hd {
+            height: 45px;
+        }
+
+        .hd span {
+            display: inline-block;
+            width: 90px;
+            background-color: pink;
+            line-height: 45px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .hd span.current {
+            background-color: yellowgreen;
+        }
+
+        .bd li {
+            height: 255px;
+            background-color: yellowgreen;
+            display: none;
+        }
+
+        .bd li.current {
+            display: block;
+            font-size: 36px;
+        }
+    </style>-->
+   <!-- <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>-->
+<body>
+<!--<input type="text" id="txt"/>
+<input type="button" value="按钮" id="btn"/>
+<script>
+    var btn=document.getElementById("btn");
+    var txt=document.getElementById("txt");
+    btn.onclick=function(){
+        txt.disabled=true;
+    }
+</script>-->
+
+
+<!--<input type="text" id="txt">
+<input type="button" value="按钮" id="btn">-->
+<!--<script>
+    var tex=document.getElementById("tex");
+    var btn=document.getElementById("btn");
+    console.dir(btn);
+    btn.onclick=function(){
+        txt.disabled=true;
+    }
+</script>-->
+
+
+
+<!--<input type="text">
+<input type="text">
+<input type="text">
+<input type="text" value="按钮" id="btn">-->
+
+
+<!--<div id="box">
+    <input type="text" id="test"/>
+    <input type="text"/>
+    <input type="text"/>
+    <input type="text"/>
+</div>
+<input type="button" id="btn" value="按钮"/>
+<script>
+    var tex=document.getElementById("tex");
+    var btn=document.getElementById("btn");
+    var box=document.getElementById("box");
+
+    var inputs=box.getElementsByTagName("input");
+    for(var i=0;i<inputs.length;i++){
+        var input=inputs[i];
+        input.values=i;
+    }
+    btn.onclick=function(){
+        var str="";
+        for(var i=0;i<inputs.length;i++){
+            str+=inputs[i].value;
+        }
+        console.log(str);
+    };
+
+</script>-->
+
+
+
+
+
+
+<!--点击按钮选中D-->
+<!--<select name="" id="">
+    <option value="">A</option>
+    <option value="">B</option>
+    <option value="">C</option>
+    <option value="" id="d">D</option>
+</select>
+<input type="button" value="按钮" id="btn"/>
+<script>
+    var btn=document.getElementById("btn");
+    var d=document.getElementById("d");
+    console.dir(d);
+    console.dir(d.selected);
+    btn.onclick=function(){
+        d.selected=true;
+    };
+</script>-->
+
+
+
+
+
+<!--<div class="wrap">
+    <table>
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox" id="j_cbAll"/>
+            </th>
+            <th>菜名</th>
+            <th>饭店</th>
+        </tr>
+        </thead>
+        <tbody id="j_tb">
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>红烧肉</td>
+            <td>田老师</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>西红柿鸡蛋</td>
+            <td>田老师</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>红烧狮子头</td>
+            <td>田老师</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>日式肥牛</td>
+            <td>田老师</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    var all=document.getElementById("j_cbAll");
+    var tb=document.getElementById("j_tb");
+    var checkboxes=tb.getElementsByTagName("input");
+    all.onclick=function(){
+        for(i=0;i<checkboxes.length;i++){
+            checkboxes[i].checked=all.checked;
+        }
+    };-->
+   <!-- 下面控制上面-->
+   <!-- for(var i=0;i<checkboxes.length;i++){
+        checkboxes[i].onclick=function(){
+            var isCheckedAll=true;
+            for(var j=0;j<checkboxes.length;j++){
+                if(checkboxes[j].checked!==true){
+                    isCheckedAll=false;
+                    break;
+                }
+            }
+            all.checked=isCheckedAll;
+        }
+    }
+
+</script>-->
+
+
+
+<!--table栏切换-->
+<!--上部-->
+<!--<div class="box" id="box">
+    <div class="hd">
+        <span class="current">体育</span>
+        <span>娱乐</span>
+        <span>新闻</span>
+        <span>综合</span>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="current">我是体育模块</li>
+            <li>我是娱乐模块</li>
+            <li>我是新闻模块</li>
+            <li>我是综合模块</li>
+        </ul>
+    </div>
+</div>
+<script>
+    var box=document.getElementById("box");
+    var spans=box.getElementsByTagName("span");
+    var li=box.getElementsByTagName("li");
+    for(var i=0;i<spans.length;i++){
+    spans[i].onclick=function(){
+           for(var i=0;i<spans.length;i++){
+               spans[i].className="";
+           }
+        this.className="current";
+        }
+        for (var i = 0; i < array.length; i++) {
+            var obj = array[i];
+            
+        }
+    }
+</script>-->
+
+
+<!--<select name="" id="sel">
+    <option value="">A</option>
+    <option value="">B</option>
+    <option value="">C</option>
+    <option value="">D</option>
+</select>
+<input type="button" value="按钮" id="btn"/>
+<script>
+    var btn=document.getElementById("btn");
+    var sel=document.getElementById("sel");
+    var options=sel.children;
+    btn.onclick=function(){
+        var random=parseInt(Math.random()*options.length);
+        options[random].selected=true;
+    }
+</script>-->
+
+
+
+<!--<input type="text" id="txtName"><span></span><br>
+<input type="text" id="txtPwd">
+<span></span><br>
+<input type="button" id="btn" value="注册">
+<script>
+    var txtName=document.getElementById("txtName");
+    txtName.onkeyup=function(){
+        if(this.value.length<3||this.value.length>6){
+            this.nextSibling.innerHTML="错误";
+        }else {
+            this.nextSibling.innerHTML="";
+        }
+    }
+</script>-->
+</body>
+</html>

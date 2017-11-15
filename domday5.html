@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input type="button" id="btn1" value="设置定时器"/>
+<input type="button" id="btn2" value="清除定时器"/>
+<script>
+    var ms=document.getElementById("ms");
+    var timerID=null;
+    var bnt1=document.getElementById("btn1");
+    var bnt2=document.getElementById("btn2");
+    btn1.onclick=function(){
+        timerID=setTimeout(function(){
+            document.write("爆炸")
+        },3000);
+    }
+    btn2.onclick=function(){
+        clearTimeout(timerID)
+    }
+</script>-->
+
+
+<!--间歇定时器-->
+<input type="button" value="设定定时器" id="btn1"/>
+<input type="button" value="清除定时器" id="btn2"/>
+<script>
+    var timer=null;
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+
+    btn1.onclick=function(){
+            timer=setInterval(function(){
+                document.write(" QAQ")
+            },300);
+    }
+    btn2.onclick=function(){
+        clearInterval(timer);
+    }
+
+</script>
+</body>
+</html>
